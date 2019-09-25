@@ -15,6 +15,7 @@
 		B57C7AA2233A194600E8B932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57C7AA0233A194600E8B932 /* LaunchScreen.storyboard */; };
 		B57C7ADD233A1DFB00E8B932 /* InfoTriathlon.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57C7AD8233A1DFB00E8B932 /* InfoTriathlon.plist */; };
 		B57C7AE8233A1E0700E8B932 /* InfoPentathlon.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57C7AE4233A1E0700E8B932 /* InfoPentathlon.plist */; };
+		B57C7B16233B148F00E8B932 /* TestInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57C7B11233B148F00E8B932 /* TestInfo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,13 @@
 			remoteGlobalIDString = B57C7AB2233A1DD000E8B932;
 			remoteInfo = Triathlon;
 		};
+		B57C7B14233B148F00E8B932 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B57C7B0D233B148F00E8B932 /* TestFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B57C7B01233B148400E8B932;
+			remoteInfo = TestFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +71,9 @@
 		B57C7ADF233A1E0700E8B932 /* Pentathlon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pentathlon.xcodeproj; sourceTree = "<group>"; };
 		B57C7AE3233A1E0700E8B932 /* Pentathlon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pentathlon.h; sourceTree = "<group>"; };
 		B57C7AE4233A1E0700E8B932 /* InfoPentathlon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoPentathlon.plist; sourceTree = "<group>"; };
+		B57C7B0D233B148F00E8B932 /* TestFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TestFramework.xcodeproj; sourceTree = "<group>"; };
+		B57C7B11233B148F00E8B932 /* TestInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestInfo.plist; sourceTree = "<group>"; };
+		B57C7B12233B148F00E8B932 /* TestFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFramework.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +115,7 @@
 				B57C7A9E233A194600E8B932 /* Assets.xcassets */,
 				B57C7AA0233A194600E8B932 /* LaunchScreen.storyboard */,
 				B57C7AA3233A194600E8B932 /* Info.plist */,
+				B57C7B0C233B148F00E8B932 /* TestFramework */,
 			);
 			path = Import;
 			sourceTree = "<group>";
@@ -160,6 +172,32 @@
 			path = Pentathlon;
 			sourceTree = "<group>";
 		};
+		B57C7B0C233B148F00E8B932 /* TestFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B57C7B0D233B148F00E8B932 /* TestFramework.xcodeproj */,
+				B57C7B10233B148F00E8B932 /* TestFramework */,
+			);
+			path = TestFramework;
+			sourceTree = "<group>";
+		};
+		B57C7B0E233B148F00E8B932 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B57C7B15233B148F00E8B932 /* TestFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B57C7B10233B148F00E8B932 /* TestFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B57C7B11233B148F00E8B932 /* TestInfo.plist */,
+				B57C7B12233B148F00E8B932 /* TestFramework.h */,
+			);
+			path = TestFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,6 +252,10 @@
 					ProjectRef = B57C7ADF233A1E0700E8B932 /* Pentathlon.xcodeproj */;
 				},
 				{
+					ProductGroup = B57C7B0E233B148F00E8B932 /* Products */;
+					ProjectRef = B57C7B0D233B148F00E8B932 /* TestFramework.xcodeproj */;
+				},
+				{
 					ProductGroup = B57C7AD5233A1DFB00E8B932 /* Products */;
 					ProjectRef = B57C7AD4233A1DFB00E8B932 /* Triathlon.xcodeproj */;
 				},
@@ -240,6 +282,13 @@
 			remoteRef = B57C7AE6233A1E0700E8B932 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		B57C7B15233B148F00E8B932 /* TestFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TestFramework.framework;
+			remoteRef = B57C7B14233B148F00E8B932 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -249,6 +298,7 @@
 			files = (
 				B57C7ADD233A1DFB00E8B932 /* InfoTriathlon.plist in Resources */,
 				B57C7AA2233A194600E8B932 /* LaunchScreen.storyboard in Resources */,
+				B57C7B16233B148F00E8B932 /* TestInfo.plist in Resources */,
 				B57C7A9F233A194600E8B932 /* Assets.xcassets in Resources */,
 				B57C7AE8233A1E0700E8B932 /* InfoPentathlon.plist in Resources */,
 				B57C7A9D233A194500E8B932 /* Main.storyboard in Resources */,

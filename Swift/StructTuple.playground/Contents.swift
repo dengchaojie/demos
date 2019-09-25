@@ -4,6 +4,20 @@ import Foundation
 //let img = UIImage.init(named: "ios60")
 //print(img!.size.width)
 
+
+//enum Device {
+//    case iPhone, iPad
+//    var year: Int {
+//        switch self {
+//            case .iPhone: return 2007
+//            case .iPad: return 2010
+//        }
+//    }
+//}
+//
+//let dev = Device.iPhone
+//print(dev.year)
+
 enum AccountType {
     case chuJi
     case zhongJi
@@ -70,3 +84,6 @@ follow.displayOptions.likeButton.bigButton = false
 //
 //
 //}
+
+
+

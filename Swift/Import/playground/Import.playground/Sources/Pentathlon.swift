@@ -1,28 +1,16 @@
-import UIKit
+import Foundation
 
-struct Triathlon {
-    
-    // 铁人三项模块
-    func swim() {
-        print("🏊‍ Swim 1.5 km")
+public class Pentathlon {
+    public init() {
+        print("Pentathlon init")
+
     }
-
-    func bike() {
-        print("🚴 Cycle 40 km")
-    }
-
-    func run() {
-        print("🏃‍ Run 10 km")
-    }
-}
-
-struct Pentathlon {
     // 铁人五项模块
-    func fence() {
+    public func fence() {
         print("🤺 Bout with épées")
     }
 
-    func swim() {
+    public func swim() {
         print("🏊‍ Swim 200 m")
     }
 

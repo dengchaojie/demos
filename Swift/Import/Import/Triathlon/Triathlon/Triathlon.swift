@@ -11,15 +11,15 @@ import Foundation
 public struct Triathlon {
     
     // 铁人三项模块
-    public func swim() {
+    public static func swim() {
         print("🏊‍ Swim 1.5 km")
     }
 
-    public func bike() {
+    public static func bike() {
         print("🚴 Cycle 40 km")
     }
 
-    public func run() {
+    public static func run() {
         print("🏃‍ Run 10 km")
     }
 }

@@ -9,23 +9,23 @@
 import Foundation
 public struct Pentathlon {
     // 铁人五项模块
-    public func fence() {
+    public static func fence() {
         print("🤺 Bout with épées")
     }
 
-    public func swim() {
+    public static func swim() {
         print("🏊‍ Swim 200 m")
     }
 
-    public func ride() {
+    public static func ride() {
         print("🏇 Complete a show jumping course")
     }
 
-    public func shoot() {
+    public static func shoot() {
         print("🎯 Shoot 5 targets")
     }
 
-    public func run() {
+    public static func run() {
         print("🏃‍ Run 3 km cross-country")
     }
 }
