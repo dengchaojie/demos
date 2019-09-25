@@ -19,7 +19,7 @@ public struct Publishable<Value: Equatable> {
     public init(wrappedValue value: Value) {
         storage = value
         publisher = PassthroughSubject<Value?, Never>.init()
-//        Publishers.AllSatisfy<PassthroughSubject>
+//        Publishers.AllSatisfy<<#Upstream: Publisher#>>
     }
     
     public var wrappedValue: Value {

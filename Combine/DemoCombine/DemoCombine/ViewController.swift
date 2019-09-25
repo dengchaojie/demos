@@ -11,18 +11,17 @@ import Combine
 
 class ViewController: UIViewController {
         
-    let signInPublisher = NotificationCenter.Publisher(center: .default, name: HrtConstraint.nameNote)
-//        .map {
-//        return ($0 as SignInInfo).userName ?? "unkown"
-//    }
+    let signInPublisher = NotificationCenter.Publisher(center: .default, name: HrtConstraint.nameNote).map {
+        return ($0 as? SignInInfo)?.userName ?? "unknown"
+    }
     
     let nameLabel = UILabel.init(frame: CGRect.init(x: 100, y: 100, width: 100, height: 40))
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.addSubview(nameLabel)
-        
-        
+        self.registerSignInHandle()
+//        let info = SignInInfo.init(userName: "dcj", password: "123")
     }
     
     func registerSignInHandle() {
