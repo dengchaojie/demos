@@ -18,6 +18,8 @@
 		B517969E233B475E001DA5F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B517969D233B475E001DA5F2 /* Assets.xcassets */; };
 		B51796A1233B475E001DA5F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51796A0233B475E001DA5F2 /* Preview Assets.xcassets */; };
 		B51796A4233B475E001DA5F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51796A2233B475E001DA5F2 /* LaunchScreen.storyboard */; };
+		B53A55EF233B64BB004BBDFE /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A55EE233B64BB004BBDFE /* FirstView.swift */; };
+		B57602C8233B62980042A37D /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57602C7233B62980042A37D /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		B51796A0233B475E001DA5F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B51796A3233B475E001DA5F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B51796A5233B475E001DA5F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B53A55EE233B64BB004BBDFE /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		B57602C7233B62980042A37D /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +107,12 @@
 				B5179697233B475E001DA5F2 /* AppDelegate.swift */,
 				B5179699233B475E001DA5F2 /* SceneDelegate.swift */,
 				B517969B233B475E001DA5F2 /* ContentView.swift */,
+				B57602C7233B62980042A37D /* SecondView.swift */,
 				B517969D233B475E001DA5F2 /* Assets.xcassets */,
 				B51796A2233B475E001DA5F2 /* LaunchScreen.storyboard */,
 				B51796A5233B475E001DA5F2 /* Info.plist */,
 				B517969F233B475E001DA5F2 /* Preview Content */,
+				B53A55EE233B64BB004BBDFE /* FirstView.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -230,7 +236,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5179698233B475E001DA5F2 /* AppDelegate.swift in Sources */,
+				B53A55EF233B64BB004BBDFE /* FirstView.swift in Sources */,
 				B517969A233B475E001DA5F2 /* SceneDelegate.swift in Sources */,
+				B57602C8233B62980042A37D /* SecondView.swift in Sources */,
 				B517969C233B475E001DA5F2 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B51796AA233B48BC001DA5F2 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51796A9233B48BC001DA5F2 /* SecondView.swift */; };
+		B53A55F3233C96AA004BBDFE /* BlockEscaping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A55F2233C96AA004BBDFE /* BlockEscaping.swift */; };
+		B53A55F5233C97ED004BBDFE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A55F4233C97ED004BBDFE /* LoginView.swift */; };
 		B57C7A1A2339AC6500E8B932 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C7A192339AC6500E8B932 /* LogoView.swift */; };
 		B5DDAFDB2338A06500269A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDAFDA2338A06500269A6F /* AppDelegate.swift */; };
 		B5DDAFDD2338A06500269A6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDAFDC2338A06500269A6F /* SceneDelegate.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		B51796A9233B48BC001DA5F2 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		B53A55F2233C96AA004BBDFE /* BlockEscaping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockEscaping.swift; sourceTree = "<group>"; };
+		B53A55F4233C97ED004BBDFE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B57C7A192339AC6500E8B932 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		B5DDAFD72338A06500269A6F /* SwiftUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DDAFDA2338A06500269A6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,13 +69,15 @@
 				B5DDAFDA2338A06500269A6F /* AppDelegate.swift */,
 				B5DDAFDC2338A06500269A6F /* SceneDelegate.swift */,
 				B5DDAFDE2338A06500269A6F /* ContentView.swift */,
+				B53A55F4233C97ED004BBDFE /* LoginView.swift */,
+				B57C7A192339AC6500E8B932 /* LogoView.swift */,
 				B5DDAFE02338A06600269A6F /* Assets.xcassets */,
 				B5DDAFE52338A06600269A6F /* LaunchScreen.storyboard */,
 				B5DDAFE82338A06600269A6F /* Info.plist */,
 				B5DDAFE22338A06600269A6F /* Preview Content */,
 				B5DDAFEE2338AC8D00269A6F /* DefensiveCopy.swift */,
-				B57C7A192339AC6500E8B932 /* LogoView.swift */,
 				B51796A9233B48BC001DA5F2 /* SecondView.swift */,
+				B53A55F2233C96AA004BBDFE /* BlockEscaping.swift */,
 			);
 			path = SwiftUIPractice;
 			sourceTree = "<group>";
@@ -158,8 +164,10 @@
 				B51796AA233B48BC001DA5F2 /* SecondView.swift in Sources */,
 				B57C7A1A2339AC6500E8B932 /* LogoView.swift in Sources */,
 				B5DDAFDB2338A06500269A6F /* AppDelegate.swift in Sources */,
+				B53A55F3233C96AA004BBDFE /* BlockEscaping.swift in Sources */,
 				B5DDAFDD2338A06500269A6F /* SceneDelegate.swift in Sources */,
 				B5DDAFEF2338AC8D00269A6F /* DefensiveCopy.swift in Sources */,
+				B53A55F5233C97ED004BBDFE /* LoginView.swift in Sources */,
 				B5DDAFDF2338A06500269A6F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
