@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  SwiftUIPractice
+//  RGBGuess
 //
-//  Created by hrt03 on 2019/9/23.
+//  Created by hrt03 on 2019/9/27.
 //  Copyright © 2019 dengchaojie. All rights reserved.
 //
 
@@ -20,9 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-//        let p = Person.init(name: DefensiveCopying.init(wrappedValue: "dcj"))
-//        p.visitName()
-        let contentView = ContentView()
+        let contentView = ContentView(rGuess: 0.5, gGuess: 0.5, bGuess: 0.5)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
