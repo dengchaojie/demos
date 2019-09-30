@@ -37,9 +37,7 @@ struct ContentView: View {
                 }
 //            .padding(.horizontal,0).padding(.top, 0)
             
-            Button(action: {
-                self.isShowAlert = true
-            }, label: {
+            Button(action: buttonAction, label: {
                 Text("Hit Me")
             }).alert(isPresented: $isShowAlert) { () -> Alert in
                 Alert(title: Text("Your score"), message: Text("\(computeScore())"))
@@ -62,9 +60,10 @@ struct ContentView: View {
         let diff = sqrt(rDiff*rDiff + gDiff*gDiff + bDiff*bDiff)
         return Int((1.0 - diff) * 100 + 0.5)
     }
-//    func buttonAction() -> Void {
-//
-//    }
+    func buttonAction() -> Void {
+        self.isShowAlert = true
+
+    }
     
     
 }
