@@ -2,6 +2,7 @@
 
 疑问
 .dropFirst(1)
+//        .map(Array.removeDuplicates) 编译报错
 
 
 
