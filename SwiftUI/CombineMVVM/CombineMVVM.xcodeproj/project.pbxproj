@@ -23,6 +23,9 @@
 		B5E50DF32341D50B00DB95EB /* WeatherFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E50DF22341D50B00DB95EB /* WeatherFetchable.swift */; };
 		B5E50DF52341D57000DB95EB /* WeatherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E50DF42341D57000DB95EB /* WeatherError.swift */; };
 		B5E50DF82341D8B200DB95EB /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E50DF72341D8B200DB95EB /* Parsing.swift */; };
+		C121588F23463E9500DDECFC /* WeeklyWeatherBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C121588E23463E9500DDECFC /* WeeklyWeatherBuilder.swift */; };
+		C121589223463F3200DDECFC /* CurrentWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C121589123463F3200DDECFC /* CurrentWeatherViewModel.swift */; };
+		C121589423463F7400DDECFC /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C121589323463F7400DDECFC /* CurrentWeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		B5E50DF22341D50B00DB95EB /* WeatherFetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFetchable.swift; sourceTree = "<group>"; };
 		B5E50DF42341D57000DB95EB /* WeatherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherError.swift; sourceTree = "<group>"; };
 		B5E50DF72341D8B200DB95EB /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
+		C121588E23463E9500DDECFC /* WeeklyWeatherBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWeatherBuilder.swift; sourceTree = "<group>"; };
+		C121589123463F3200DDECFC /* CurrentWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewModel.swift; sourceTree = "<group>"; };
+		C121589323463F7400DDECFC /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		B5617704234195D000BCCDE9 /* CombineMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C121589023463F1F00DDECFC /* New Group */,
 				B56177292341CD9400BCCDE9 /* Utilities */,
 				B56177222341C9B500BCCDE9 /* OpenWeatherApi */,
 				B561771B2341C79900BCCDE9 /* WeeklyWeather */,
@@ -106,6 +113,7 @@
 				B561771E2341C8FC00BCCDE9 /* WeaklyWeatherViewModel.swift */,
 				B56177272341CCA300BCCDE9 /* DailyWeatherRow.swift */,
 				B56177202341C97A00BCCDE9 /* DailyWeatherRowViewModel.swift */,
+				C121588E23463E9500DDECFC /* WeeklyWeatherBuilder.swift */,
 			);
 			path = WeeklyWeather;
 			sourceTree = "<group>";
@@ -143,6 +151,15 @@
 				B5E50DF72341D8B200DB95EB /* Parsing.swift */,
 			);
 			path = Parsing;
+			sourceTree = "<group>";
+		};
+		C121589023463F1F00DDECFC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				C121589123463F3200DDECFC /* CurrentWeatherViewModel.swift */,
+				C121589323463F7400DDECFC /* CurrentWeatherView.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +237,8 @@
 				B5617706234195D000BCCDE9 /* AppDelegate.swift in Sources */,
 				B5617708234195D000BCCDE9 /* SceneDelegate.swift in Sources */,
 				B561771F2341C8FC00BCCDE9 /* WeaklyWeatherViewModel.swift in Sources */,
+				C121589423463F7400DDECFC /* CurrentWeatherView.swift in Sources */,
+				C121588F23463E9500DDECFC /* WeeklyWeatherBuilder.swift in Sources */,
 				B561772C2341CDB800BCCDE9 /* Formatters.swift in Sources */,
 				B5E50DF82341D8B200DB95EB /* Parsing.swift in Sources */,
 				B56177282341CCA300BCCDE9 /* DailyWeatherRow.swift in Sources */,
@@ -229,6 +248,7 @@
 				B56177262341CC4700BCCDE9 /* Responses.swift in Sources */,
 				B561770A234195D000BCCDE9 /* ContentView.swift in Sources */,
 				B5E50DF32341D50B00DB95EB /* WeatherFetchable.swift in Sources */,
+				C121589223463F3200DDECFC /* CurrentWeatherViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
