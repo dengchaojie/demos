@@ -1,6 +1,9 @@
 import UIKit
 import Foundation
 
+var str = "kdkdked"
+str.dropFirst(2)
+
 /// 关联值
 enum Trade: CustomStringConvertible {
     case Buy(stock: String, amount: Int)
