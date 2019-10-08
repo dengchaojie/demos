@@ -12,9 +12,9 @@ import SwiftUI
 class DailyWeatherRowViewModel: Identifiable {
     private let item: WeeklyForecastResponse.Item
     
-//    let id: String {
-//        return day + temperature + title
-//    }
+    var id: String {
+        return day + temperature + title
+    }
     var day: String {
         return dayFormatter.string(from: item.date)
     }

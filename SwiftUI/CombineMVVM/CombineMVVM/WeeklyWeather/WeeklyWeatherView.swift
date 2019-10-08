@@ -15,22 +15,54 @@ struct WeeklyWeatherView: View {
         NavigationView {
             List {
                 seachField
+                if viewModel.dataSource.isEmpty {
+                    emptySection
+                }else
+                {
+                    cityHourlyForecastSection
+                    forecastSection
+                }
             }
+            .listStyle(GroupedListStyle())
+            .navigationBarTitle("Weathter ⛅️")
             
         }
-        
-        
-        
+
     }
 }
 
 private extension WeeklyWeatherView {
     var seachField: some View {
         HStack(alignment: .center, spacing: 0) {
-            Text("todo")
-//            TextField("e.g. Cupertino", text: @viewModel.city)
+            TextField("e.g. Cupertino", text: $viewModel.city)
         }
     }
+    var forecastSection: some View {
+        Section {
+            ForEach(viewModel.dataSource, content: DailyWeatherRow.init(viewModel:))
+        }
+    }
+    
+    var cityHourlyForecastSection: some View {
+        Section {
+            NavigationLink(destination: viewModel.currentWeatherView) {
+                VStack(alignment: .leading) {
+                    Text(viewModel.city)
+                    Text("Weather today").font(.caption).foregroundColor(.gray)
+                }
+            }
+            
+        }
+    }
+    
+    var emptySection: some View
+    {
+        Section{
+            Text("No results").foregroundColor(.gray)
+        }
+    }
+    
+    
 }
 
 

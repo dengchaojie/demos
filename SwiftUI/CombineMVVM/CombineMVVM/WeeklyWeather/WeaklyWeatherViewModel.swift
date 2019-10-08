@@ -6,9 +6,10 @@
 //  Copyright © 2019 dengchaojie. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
 import Combine
 import SwiftUI
+
 
 class WeaklyWeatherViewModel: ObservableObject {
     
@@ -26,7 +27,16 @@ class WeaklyWeatherViewModel: ObservableObject {
         .dropFirst(1)
             .debounce(for: .seconds(0.5), scheduler: scheduler)
         .sink(receiveValue: fetchWeather(forCity:))
+
+    
+}
+
+extension WeaklyWeatherViewModel {
+    
+    var currentWeatherView: some View {
+        return WeeklyWeatherBuilder.makeCurrentWeatherView(withCity: self.city, weatherFetcher: self.weatherFetcher as! WeatherFetcher)
     }
+     
     
     
     func fetchWeather(forCity city: String) -> Void {
@@ -34,7 +44,7 @@ class WeaklyWeatherViewModel: ObservableObject {
         .map { response in
             response.list.map(DailyWeatherRowViewModel.init)
         }
-//        .map(Array.removeDuplicates)
+        .map(Array.removeDuplicates)
         .receive(on: DispatchQueue.main)
         .sink(
             receiveCompletion: { [weak self] value in
