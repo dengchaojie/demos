@@ -8,6 +8,7 @@
 
 import SwiftUI
 import Combine
+import SwiftUI
 
 
 class WeaklyWeatherViewModel: ObservableObject {
@@ -26,29 +27,7 @@ class WeaklyWeatherViewModel: ObservableObject {
         .dropFirst(1)
             .debounce(for: .seconds(0.5), scheduler: scheduler)
         .sink(receiveValue: fetchWeather(forCity:))
-    }
-    
-    func fetchWeather(forCity city: String) -> Void {
-        weatherFetcher.weaklyWeatherForecast(forCity: city)
-            .map{ response in
-                response.list.map(DailyWeatherRowViewModel.init)
-        }
-        .map(Array.removeDuplicates)
-        .receive(on: DispatchQueue.main)
-        .sink(
-            receiveCompletion: { [weak self] value in
-                guard let self = self else {return}
-                switch value {
-                    case .finished: break
-                    case .failure: self.dataSource = []
-                }
-            },
-            receiveValue: { [weak self] weather in
-                guard let self = self else {return}
-                self.dataSource = weather
-                })
-        .store(in: &disposables)
-    }
+
     
 }
 
@@ -59,4 +38,28 @@ extension WeaklyWeatherViewModel {
     }
      
     
+    
+    func fetchWeather(forCity city: String) -> Void {
+        weatherFetcher.weaklyWeatherForecast(forCity: city)
+        .map { response in
+            response.list.map(DailyWeatherRowViewModel.init)
+        }
+        .map(Array.removeDuplicates)
+        .receive(on: DispatchQueue.main)
+        .sink(
+            receiveCompletion: { [weak self] value in
+            guard let self = self else { return }
+            switch value {
+                case .failure:
+                self.dataSource = []
+            case .finished:
+                break
+            }
+        },
+            receiveValue: { [weak self ] forecast in
+                guard let self = self else { return }
+                self.dataSource = forecast
+            })
+        .store(in: &disposables)
+    }
 }
