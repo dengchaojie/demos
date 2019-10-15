@@ -4,5 +4,14 @@
         <page name='What is Combine'/>
         <page name='Publishers &amp; Subscribers'/>
         <page name='Subjects'/>
+        <page name='Operators'/>
+        <page name='Rules of subscriptions'/>
+        <page name='Foundation and Combine'/>
+        <page name='@Published properties'/>
+        <page name='Memory Management'/>
+        <page name='Flatmap and error types'/>
+        <page name='Combining Publishers'/>
+        <page name='Future and Promises'/>
+        <page name='Custom UIKit Publishers'/>
     </pages>
 </playground>

@@ -1,0 +1,36 @@
+
+
+为什么把堆（数据结构）看成一颗树
+
+- (void)someFunc1
+{
+	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+
+	      NSData *dataFromURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:@""]];
+	      UIImage *imageFromData = [UIImage imageWithData:dataFromURL];
+
+	      dispatch_async(dispatch_get_main_queue(), ^{
+
+	              UIImageView *imageView = [[UIImageView alloc] initWithImage:imageFromData];          
+	      });      
+	  });
+
+}
+
+- (void)someFunc2
+{
+    NSLog(@"%@",[NSThread currentThread]);
+    
+    __block NSInteger num = 0;
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_sync(queue, ^{
+        //模仿耗时操作
+        for (NSInteger i = 0; i< 1000000000; i ++) {
+            num++;
+        }
+        NSLog(@"%@",[NSThread currentThread]);
+
+    });
+    NSLog(@"%ld",num);
+    NSLog(@"%@",[NSThread currentThread]);
+}

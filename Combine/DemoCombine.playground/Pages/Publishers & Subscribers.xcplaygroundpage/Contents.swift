@@ -1,6 +1,12 @@
 import Combine
 import Foundation
+/*:
+[Previous](@previous)
+## Publishers and Subscribers
+- A Publisher _publishes_ values ...
+- .. a subscriber _subscribes_ to receive publisher's values
 
+*/
 //参考https://www.jianshu.com/p/df8535b40079 https://github.com/AvdLee/CombineSwiftPlayground
 
 let publ = Just(28)
