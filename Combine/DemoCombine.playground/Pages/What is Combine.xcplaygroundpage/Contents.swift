@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 
 import Combine
-///声明：这个demo，参考源码CombineSwiftPlayground
+///声明：这个demo，参考源码https://github.com/AvdLee/CombineSwiftPlayground
 /*:
 [Previous](@previous)
 # What is Combine?
