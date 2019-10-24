@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04B988C660A7BDEAC0BBAB63 /* Pods_MoyaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660079B3D27239CF5D207AD2 /* Pods_MoyaDemo.framework */; };
+		B51857D82361C6FA0094E5E3 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51857D72361C6FA0094E5E3 /* Package.swift */; };
 		B5635657235D3FAD00A29BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5635656235D3FAD00A29BAC /* AppDelegate.swift */; };
 		B5635659235D3FAD00A29BAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5635658235D3FAD00A29BAC /* SceneDelegate.swift */; };
 		B563565B235D3FAD00A29BAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563565A235D3FAD00A29BAC /* ViewController.swift */; };
@@ -17,9 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28E58109F443EBD17ED405E8 /* Pods-MoyaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaDemo.release.xcconfig"; path = "Target Support Files/Pods-MoyaDemo/Pods-MoyaDemo.release.xcconfig"; sourceTree = "<group>"; };
-		660079B3D27239CF5D207AD2 /* Pods_MoyaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		727CCF5CDD9A364CD7F805A5 /* Pods-MoyaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaDemo.debug.xcconfig"; path = "Target Support Files/Pods-MoyaDemo/Pods-MoyaDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B51857D72361C6FA0094E5E3 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		B5635653235D3FAD00A29BAC /* MoyaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoyaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5635656235D3FAD00A29BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5635658235D3FAD00A29BAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,30 +33,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B988C660A7BDEAC0BBAB63 /* Pods_MoyaDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E89D7E4A9ED52AA7F544397 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				727CCF5CDD9A364CD7F805A5 /* Pods-MoyaDemo.debug.xcconfig */,
-				28E58109F443EBD17ED405E8 /* Pods-MoyaDemo.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		B563564A235D3FAD00A29BAC = {
 			isa = PBXGroup;
 			children = (
 				B5635655235D3FAD00A29BAC /* MoyaDemo */,
 				B5635654235D3FAD00A29BAC /* Products */,
-				1E89D7E4A9ED52AA7F544397 /* Pods */,
-				EEE423C9486AA2D21B25B58E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,16 +65,9 @@
 				B563565F235D3FAE00A29BAC /* Assets.xcassets */,
 				B5635661235D3FAE00A29BAC /* LaunchScreen.storyboard */,
 				B5635664235D3FAE00A29BAC /* Info.plist */,
+				B51857D72361C6FA0094E5E3 /* Package.swift */,
 			);
 			path = MoyaDemo;
-			sourceTree = "<group>";
-		};
-		EEE423C9486AA2D21B25B58E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				660079B3D27239CF5D207AD2 /* Pods_MoyaDemo.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,11 +77,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5635667235D3FAE00A29BAC /* Build configuration list for PBXNativeTarget "MoyaDemo" */;
 			buildPhases = (
-				FB756733A520A250D1CCE64D /* [CP] Check Pods Manifest.lock */,
 				B563564F235D3FAD00A29BAC /* Sources */,
 				B5635650235D3FAD00A29BAC /* Frameworks */,
 				B5635651235D3FAD00A29BAC /* Resources */,
-				3F58C710A92E7176395BBD54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,53 +136,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3F58C710A92E7176395BBD54 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoyaDemo/Pods-MoyaDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoyaDemo/Pods-MoyaDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoyaDemo/Pods-MoyaDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FB756733A520A250D1CCE64D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MoyaDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		B563564F235D3FAD00A29BAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51857D82361C6FA0094E5E3 /* Package.swift in Sources */,
 				B563565B235D3FAD00A29BAC /* ViewController.swift in Sources */,
 				B5635657235D3FAD00A29BAC /* AppDelegate.swift in Sources */,
 				B5635659235D3FAD00A29BAC /* SceneDelegate.swift in Sources */,
@@ -351,7 +286,6 @@
 		};
 		B5635668235D3FAE00A29BAC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 727CCF5CDD9A364CD7F805A5 /* Pods-MoyaDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -370,7 +304,6 @@
 		};
 		B5635669235D3FAE00A29BAC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28E58109F443EBD17ED405E8 /* Pods-MoyaDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
