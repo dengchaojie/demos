@@ -13,5 +13,6 @@
         <page name='Combining Publishers'/>
         <page name='Future and Promises'/>
         <page name='Custom UIKit Publishers'/>
+        <page name='Debug'/>
     </pages>
 </playground>

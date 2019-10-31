@@ -9,7 +9,7 @@ import Foundation
 */
 //参考https://www.jianshu.com/p/df8535b40079 https://github.com/AvdLee/CombineSwiftPlayground
 
-let publ = Just(28)
+let publ = Just<Int>(28)
 let cancelHrt = publ.sink(receiveValue: { value in
     
     print(value)
