@@ -1,0 +1,6 @@
+framework module Pods_SendMessageViaBluetooth {
+  umbrella header "Pods-SendMessageViaBluetooth-umbrella.h"
+
+  export *
+  module * { export * }
+}
