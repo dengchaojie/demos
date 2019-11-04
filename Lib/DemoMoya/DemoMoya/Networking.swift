@@ -18,7 +18,7 @@ private let myEndpointClosure = { (target: API) -> Endpoint in
     let endpoint = Endpoint.init(url: url, sampleResponseClosure: { () -> EndpointSampleResponse in
         return EndpointSampleResponse.networkResponse(200, target.sampleData)
     }, method: target.method, task: target.task, httpHeaderFields: target.headers)
-    
+//    endpoint.adding(newHTTPHeaderFields: ["appName":"极速版"])
     switch target {
     case .getMerByPhoneNumForJiSuBan:
         requestTimeout = 15
