@@ -35,6 +35,9 @@ struct Networking {
         provider.request(target) { (result) in
             switch result {
             case . success(let response):
+//                if let str = try? response.mapString() {
+//                    print(str)
+//                }
                 if let json = try? response.mapJSON() as? [String: Any] {
                     successCallback(json)
                 }else {
