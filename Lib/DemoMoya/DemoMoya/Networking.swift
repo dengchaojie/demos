@@ -30,7 +30,27 @@ private let myEndpointClosure = { (target: API) -> Endpoint in
 }
 
 struct Networking {
-    static let provider = MoyaProvider<API>.init(endpointClosure: myEndpointClosure)
+    
+    static var myPlugin: PluginType {
+        let plu = NetworkActivityPlugin.init { (NetworkActivityChangeType, TargetType) in
+            switch NetworkActivityChangeType {
+                case .began:
+                    DispatchQueue.main.async {
+                        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+                }
+                
+                case .ended:
+                
+                    DispatchQueue.main.async {
+                            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                    }
+                
+            }
+        }
+        return plu
+    }
+    
+    static let provider = MoyaProvider<API>.init(endpointClosure: myEndpointClosure, plugins: [myPlugin])
     static func request(_ target: API, successCallback: @escaping ([String: Any]) -> Void, failure failureCallback: @escaping (String) -> Void) {
         provider.request(target) { (result) in
             switch result {
