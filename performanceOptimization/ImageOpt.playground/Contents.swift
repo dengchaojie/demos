@@ -1,5 +1,7 @@
 import UIKit
-import CoreGraphics
+import CoreGraphics//cg
+import CoreImage//ci
+
 import ImageIO
 
 let imgV = UIImageView()
@@ -61,3 +63,25 @@ func resizedImage(at url: URL, for size: CGSize) -> UIImage? {
 //    }
 //    return UIImage.init(cgImage: image)
 //}
+
+
+///技巧 #4：使用 Core Image 进行 Lanczos 重采样
+let sharedContext = CIContext.init(options: [CIContextOption.useSoftwareRenderer : false])
+func resizedImage(at url: URL, scale: CGFloat, aspectRatio: CGFloat) -> UIImage? {
+    guard let image = CIImage.init(contentsOf: url) else {
+        return nil
+    }
+    let filter = CIFilter.init(name: "CILanczosScaleTransform")
+    filter?.setValue(image, forKey: kCIInputImageKey)
+    filter?.setValue(scale, forKey: kCIInputScaleKey)
+    filter?.setValue(aspectRatio, forKeyPath: kCIInputAspectRatioKey)
+    
+    guard let outputImage = filter?.outputImage,
+        let cgImage = sharedContext.createCGImage(outputImage, from: outputImage.extent)
+    else {
+        return nil
+    }
+    
+    return UIImage.init(cgImage: cgImage)
+}
+
