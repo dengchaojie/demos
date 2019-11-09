@@ -4,15 +4,7 @@ import CoreImage//ci
 
 import ImageIO
 
-let imgV = UIImageView()
-imgV.frame = CGRect.init(x: 0, y: 0, width: 30, height: 40)
-let scaleFactor = UIScreen.main.scale
-let scale = CGAffineTransform.init(scaleX: scaleFactor, y: scaleFactor)
-let size = imgV.bounds.size.applying(scale)
-print(size.width)
-print(size.height)
-print(imgV.bounds.size.width)
-print(imgV.bounds.size.height)
+import PlaygroundSupport
 
 ///UIGraphicsImageRenderer
 // 技巧 #1：绘制到UIGraphicsImageRender
@@ -66,22 +58,32 @@ func resizedImage(at url: URL, for size: CGSize) -> UIImage? {
 
 
 ///技巧 #4：使用 Core Image 进行 Lanczos 重采样
-let sharedContext = CIContext.init(options: [CIContextOption.useSoftwareRenderer : false])
-func resizedImage(at url: URL, scale: CGFloat, aspectRatio: CGFloat) -> UIImage? {
-    guard let image = CIImage.init(contentsOf: url) else {
-        return nil
-    }
-    let filter = CIFilter.init(name: "CILanczosScaleTransform")
-    filter?.setValue(image, forKey: kCIInputImageKey)
-    filter?.setValue(scale, forKey: kCIInputScaleKey)
-    filter?.setValue(aspectRatio, forKeyPath: kCIInputAspectRatioKey)
-    
-    guard let outputImage = filter?.outputImage,
-        let cgImage = sharedContext.createCGImage(outputImage, from: outputImage.extent)
-    else {
-        return nil
-    }
-    
-    return UIImage.init(cgImage: cgImage)
-}
+//let sharedContext = CIContext.init(options: [CIContextOption.useSoftwareRenderer : false])
+//func resizedImage(at url: URL, scale: CGFloat, aspectRatio: CGFloat) -> UIImage? {
+//    guard let image = CIImage.init(contentsOf: url) else {
+//        return nil
+//    }
+//    let filter = CIFilter.init(name: "CILanczosScaleTransform")
+//    filter?.setValue(image, forKey: kCIInputImageKey)
+//    filter?.setValue(scale, forKey: kCIInputScaleKey)
+//    filter?.setValue(aspectRatio, forKeyPath: kCIInputAspectRatioKey)
+//
+//    guard let outputImage = filter?.outputImage,
+//        let cgImage = sharedContext.createCGImage(outputImage, from: outputImage.extent)
+//    else {
+//        return nil
+//    }
+//
+//    return UIImage.init(cgImage: cgImage)
+//}
 
+let imgV = UIImageView()
+imgV.backgroundColor = UIColor.white
+imgV.frame = CGRect.init(x: 0, y: 0, width: 60, height: 60)
+//let scaleFactor = UIScreen.main.scale
+imgV.image = resizedImage(at: URL.init(string: "https://static.geekbang.org/ck/5dad1827d6b28.jpg?imageView2/0/w/800")!, for: CGSize.init(width: 40, height: 40))
+//imgV.image = UIImage.init(named: "wwdc")
+
+
+
+PlaygroundPage.current.liveView = imgV
