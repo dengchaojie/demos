@@ -37,10 +37,21 @@ import UIKit
 
 // reduce
 let numberReduce: [Int] = [1,2,3,4]
-let numberSum = numberReduce.reduce(11) { (sum, item) -> Int in
-    return sum + item
-}
+let numberSum = numberReduce.reduce(11, +)
+//    numberReduce.reduce(11) { (sum, item) -> Int in
+//    return sum + item
+//}
 print(numberSum)
+
+let numberProduct = numberReduce.reduce(1, *)
+//    numberReduce.reduce(1) {
+//    $0 * $1
+//}
+//    numberReduce.reduce(1) { (result, item) -> Int in
+//    return result * item
+//}
+
+print(numberProduct)
 
 
 
