@@ -34,6 +34,9 @@ struct Player {
     mutating func levelUp() {
         self.level = self.level + 1
     }
+    static func introduce() {
+        print("a struct static method")
+    }
 }
 
 var p = Player.init(name: "dcj", level: 3)
@@ -42,5 +45,20 @@ print(p.level)
 
 //Static/class methods
 //Static and class methods (also known as type methods) belong to a struct/class type itself, rather than an instance of a struct/class. They are declared with static for a struct or class for a class:
+Player.introduce()
 
-
+class Person {
+    let name: String
+    let age: Int
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+         
+    }
+    
+    static func introduce() {
+        print("a class static method")
+    }
+}
+Person.introduce()
