@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BaseViewController.h
 //  DemoZuJianHua
 //
 //  Created by chao jie deng on 2019/11/25.
@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
-@interface ViewController : BaseViewController
 
+NS_ASSUME_NONNULL_BEGIN
+
+@interface BaseViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

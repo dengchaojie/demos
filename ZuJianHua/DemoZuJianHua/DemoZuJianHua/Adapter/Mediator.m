@@ -7,29 +7,47 @@
 //  中介者
 
 #import "Mediator.h"
-#import "DetailViewController.h"
-#import "ListViewController.h"
 
 @implementation Mediator
 
 
-+ (void)gotoDetailViewControllerWithName:(NSString *)name {
++ (instancetype)performTarget:(NSString *)target action:(NSString *)action
+                   parameters:(NSDictionary *)parameters {
     
-    DetailViewController *vc = DetailViewController.new;
-    vc.name = name;
+    Class cls;
+    SEL sel;
+    id obj;
     
+    cls = NSClassFromString(target);
+    if (cls == nil) {
+        goto fail;
+    }
+    sel = NSSelectorFromString(action);
+    if (sel == nil) {
+        goto fail;
+    }
+    obj = cls.new;
+    if (obj == nil) {
+        goto fail;
+    }
+    if ([obj respondsToSelector: sel]) {
+
+    } else {
+        goto fail;
+    }
+    
+    #pragma clang diagnostic push
+    #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        return [obj performSelector:sel withObject:parameters];
+    #pragma clang diagnostic pop
+    fail:
+        NSLog(@"找不到目标，写容错逻辑");
+        return nil;
     
     
 }
 
-+ (void)gotoListViewControllerWithName:(NSString *)name {
-    
-    ListViewController *vc = ListViewController.new;
-    vc.name = name;
-    
-    
-    
-}
+
 
 
 @end

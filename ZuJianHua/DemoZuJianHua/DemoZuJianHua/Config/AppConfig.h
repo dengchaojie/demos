@@ -1,5 +1,5 @@
 //
-//  Mediator.h
+//  AppConfig.h
 //  DemoZuJianHua
 //
 //  Created by chao jie deng on 2019/11/25.
@@ -7,14 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DCJUI.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Mediator : NSObject
+@interface AppConfig : NSObject
 
-+ (instancetype)performTarget:(NSString *)target action:(NSString *)action
-                   parameters:(NSDictionary *)parameters;
++ (instancetype)shared;
+
+@property (nonatomic, copy) NSNumber *isDetailExc;
+
+@property (nonatomic, copy) NSNumber *isListExc;
+
 @end
 
 NS_ASSUME_NONNULL_END

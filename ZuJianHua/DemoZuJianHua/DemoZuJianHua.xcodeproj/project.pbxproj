@@ -17,6 +17,15 @@
 		C13B7693238B51FA00DDFC01 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B7692238B51FA00DDFC01 /* DetailViewController.m */; };
 		C13B7696238B520300DDFC01 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B7695238B520300DDFC01 /* ListViewController.m */; };
 		C13B7699238B524300DDFC01 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B7698238B524300DDFC01 /* Mediator.m */; };
+		C13B769C238C024A00DDFC01 /* Mediator+Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B769B238C024A00DDFC01 /* Mediator+Detail.m */; };
+		C13B769F238C028C00DDFC01 /* Mediator+List.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B769E238C028C00DDFC01 /* Mediator+List.m */; };
+		C13B76A3238C039A00DDFC01 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B76A2238C039A00DDFC01 /* BaseViewController.m */; };
+		C13B76A8238C049300DDFC01 /* DetailOldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B76A7238C049300DDFC01 /* DetailOldViewController.m */; };
+		C14D2E93238C0584008C8F80 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C14D2E92238C0584008C8F80 /* README.md */; };
+		C14D2E98238C0814008C8F80 /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C14D2E97238C0814008C8F80 /* AppConfig.m */; };
+		C14D2E9E238C0DF2008C8F80 /* DCJUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C14D2E9D238C0DF2008C8F80 /* DCJUI.m */; };
+		C1D4F80C238C151C009D9128 /* BAimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D4F80B238C151C009D9128 /* BAimViewController.m */; };
+		C1D4F80F238C1548009D9128 /* BAimTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D4F80E238C1548009D9128 /* BAimTarget.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +47,24 @@
 		C13B7695238B520300DDFC01 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		C13B7697238B524300DDFC01 /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
 		C13B7698238B524300DDFC01 /* Mediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		C13B769A238C024A00DDFC01 /* Mediator+Detail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mediator+Detail.h"; sourceTree = "<group>"; };
+		C13B769B238C024A00DDFC01 /* Mediator+Detail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Mediator+Detail.m"; sourceTree = "<group>"; };
+		C13B769D238C028C00DDFC01 /* Mediator+List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mediator+List.h"; sourceTree = "<group>"; };
+		C13B769E238C028C00DDFC01 /* Mediator+List.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Mediator+List.m"; sourceTree = "<group>"; };
+		C13B76A1238C039A00DDFC01 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C13B76A2238C039A00DDFC01 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		C13B76A6238C049300DDFC01 /* DetailOldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailOldViewController.h; sourceTree = "<group>"; };
+		C13B76A7238C049300DDFC01 /* DetailOldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailOldViewController.m; sourceTree = "<group>"; };
+		C14D2E92238C0584008C8F80 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C14D2E96238C0814008C8F80 /* AppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		C14D2E97238C0814008C8F80 /* AppConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
+		C14D2E9A238C0939008C8F80 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C14D2E9C238C0DF2008C8F80 /* DCJUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCJUI.h; sourceTree = "<group>"; };
+		C14D2E9D238C0DF2008C8F80 /* DCJUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCJUI.m; sourceTree = "<group>"; };
+		C1D4F80A238C151C009D9128 /* BAimViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BAimViewController.h; sourceTree = "<group>"; };
+		C1D4F80B238C151C009D9128 /* BAimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BAimViewController.m; sourceTree = "<group>"; };
+		C1D4F80D238C1548009D9128 /* BAimTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BAimTarget.h; sourceTree = "<group>"; };
+		C1D4F80E238C1548009D9128 /* BAimTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BAimTarget.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,22 +97,20 @@
 		C13B7676238B519E00DDFC01 /* DemoZuJianHua */ = {
 			isa = PBXGroup;
 			children = (
-				C13B7690238B51C300DDFC01 /* Adapter */,
-				C13B7677238B519E00DDFC01 /* AppDelegate.h */,
-				C13B7678238B519E00DDFC01 /* AppDelegate.m */,
-				C13B767A238B519E00DDFC01 /* SceneDelegate.h */,
-				C13B767B238B519E00DDFC01 /* SceneDelegate.m */,
+				C14D2E9B238C0DC3008C8F80 /* Utilities */,
+				C14D2E92238C0584008C8F80 /* README.md */,
 				C13B767D238B519E00DDFC01 /* ViewController.h */,
 				C13B767E238B519E00DDFC01 /* ViewController.m */,
-				C13B7680238B519E00DDFC01 /* Main.storyboard */,
+				C14D2E99238C0910008C8F80 /* Config */,
+				C14D2E95238C07F5008C8F80 /* StoryBoard */,
+				C13B76A4238C045800DDFC01 /* YeWuA */,
+				C13B76A5238C046200DDFC01 /* YeWuB */,
+				C13B76A0238C037900DDFC01 /* Base */,
+				C13B7690238B51C300DDFC01 /* Adapter */,
+				C14D2E94238C07D2008C8F80 /* Delegate */,
 				C13B7683238B51A000DDFC01 /* Assets.xcassets */,
-				C13B7685238B51A000DDFC01 /* LaunchScreen.storyboard */,
 				C13B7688238B51A000DDFC01 /* Info.plist */,
 				C13B7689238B51A000DDFC01 /* main.m */,
-				C13B7691238B51FA00DDFC01 /* DetailViewController.h */,
-				C13B7692238B51FA00DDFC01 /* DetailViewController.m */,
-				C13B7694238B520300DDFC01 /* ListViewController.h */,
-				C13B7695238B520300DDFC01 /* ListViewController.m */,
 			);
 			path = DemoZuJianHua;
 			sourceTree = "<group>";
@@ -97,6 +122,82 @@
 				C13B7698238B524300DDFC01 /* Mediator.m */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		C13B76A0238C037900DDFC01 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C13B76A1238C039A00DDFC01 /* BaseViewController.h */,
+				C13B76A2238C039A00DDFC01 /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C13B76A4238C045800DDFC01 /* YeWuA */ = {
+			isa = PBXGroup;
+			children = (
+				C13B769A238C024A00DDFC01 /* Mediator+Detail.h */,
+				C13B769B238C024A00DDFC01 /* Mediator+Detail.m */,
+				C13B7691238B51FA00DDFC01 /* DetailViewController.h */,
+				C13B7692238B51FA00DDFC01 /* DetailViewController.m */,
+				C13B76A6238C049300DDFC01 /* DetailOldViewController.h */,
+				C13B76A7238C049300DDFC01 /* DetailOldViewController.m */,
+			);
+			path = YeWuA;
+			sourceTree = "<group>";
+		};
+		C13B76A5238C046200DDFC01 /* YeWuB */ = {
+			isa = PBXGroup;
+			children = (
+				C13B7694238B520300DDFC01 /* ListViewController.h */,
+				C13B7695238B520300DDFC01 /* ListViewController.m */,
+				C13B769D238C028C00DDFC01 /* Mediator+List.h */,
+				C13B769E238C028C00DDFC01 /* Mediator+List.m */,
+				C1D4F80D238C1548009D9128 /* BAimTarget.h */,
+				C1D4F80E238C1548009D9128 /* BAimTarget.m */,
+				C1D4F80A238C151C009D9128 /* BAimViewController.h */,
+				C1D4F80B238C151C009D9128 /* BAimViewController.m */,
+			);
+			path = YeWuB;
+			sourceTree = "<group>";
+		};
+		C14D2E94238C07D2008C8F80 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C13B7677238B519E00DDFC01 /* AppDelegate.h */,
+				C13B7678238B519E00DDFC01 /* AppDelegate.m */,
+				C13B767A238B519E00DDFC01 /* SceneDelegate.h */,
+				C13B767B238B519E00DDFC01 /* SceneDelegate.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		C14D2E95238C07F5008C8F80 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C13B7680238B519E00DDFC01 /* Main.storyboard */,
+				C13B7685238B51A000DDFC01 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		C14D2E99238C0910008C8F80 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C14D2E96238C0814008C8F80 /* AppConfig.h */,
+				C14D2E97238C0814008C8F80 /* AppConfig.m */,
+				C14D2E9A238C0939008C8F80 /* PrefixHeader.pch */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C14D2E9B238C0DC3008C8F80 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C14D2E9C238C0DF2008C8F80 /* DCJUI.h */,
+				C14D2E9D238C0DF2008C8F80 /* DCJUI.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +259,7 @@
 			files = (
 				C13B7687238B51A000DDFC01 /* LaunchScreen.storyboard in Resources */,
 				C13B7684238B51A000DDFC01 /* Assets.xcassets in Resources */,
+				C14D2E93238C0584008C8F80 /* README.md in Resources */,
 				C13B7682238B519E00DDFC01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,12 +272,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13B7693238B51FA00DDFC01 /* DetailViewController.m in Sources */,
+				C14D2E9E238C0DF2008C8F80 /* DCJUI.m in Sources */,
+				C13B76A3238C039A00DDFC01 /* BaseViewController.m in Sources */,
+				C13B769F238C028C00DDFC01 /* Mediator+List.m in Sources */,
 				C13B767F238B519E00DDFC01 /* ViewController.m in Sources */,
+				C1D4F80C238C151C009D9128 /* BAimViewController.m in Sources */,
+				C13B76A8238C049300DDFC01 /* DetailOldViewController.m in Sources */,
+				C14D2E98238C0814008C8F80 /* AppConfig.m in Sources */,
 				C13B7696238B520300DDFC01 /* ListViewController.m in Sources */,
 				C13B7699238B524300DDFC01 /* Mediator.m in Sources */,
 				C13B7679238B519E00DDFC01 /* AppDelegate.m in Sources */,
+				C1D4F80F238C1548009D9128 /* BAimTarget.m in Sources */,
 				C13B768A238B51A000DDFC01 /* main.m in Sources */,
 				C13B767C238B519E00DDFC01 /* SceneDelegate.m in Sources */,
+				C13B769C238C024A00DDFC01 /* Mediator+Detail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = DemoZuJianHua/config/PrefixHeader.pch;
 				INFOPLIST_FILE = DemoZuJianHua/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = DemoZuJianHua/config/PrefixHeader.pch;
 				INFOPLIST_FILE = DemoZuJianHua/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

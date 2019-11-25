@@ -1,22 +1,24 @@
 //
-//  DetailViewController.m
+//  BaseViewController.m
 //  DemoZuJianHua
 //
 //  Created by chao jie deng on 2019/11/25.
 //  Copyright © 2019 chao jie deng. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "BaseViewController.h"
 
-@interface DetailViewController ()
+@interface BaseViewController ()
 
 @end
 
-@implementation DetailViewController
+@implementation BaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = UIColor.whiteColor;
 }
 
 /*
