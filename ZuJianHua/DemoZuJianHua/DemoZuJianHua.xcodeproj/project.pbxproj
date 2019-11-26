@@ -26,6 +26,11 @@
 		C14D2E9E238C0DF2008C8F80 /* DCJUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C14D2E9D238C0DF2008C8F80 /* DCJUI.m */; };
 		C1D4F80C238C151C009D9128 /* BAimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D4F80B238C151C009D9128 /* BAimViewController.m */; };
 		C1D4F80F238C1548009D9128 /* BAimTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D4F80E238C1548009D9128 /* BAimTarget.m */; };
+		C1D4F813238C9DC9009D9128 /* CAimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D4F812238C9DC9009D9128 /* CAimViewController.m */; };
+		C1D4F817238C9EAF009D9128 /* DAimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D4F816238C9EAF009D9128 /* DAimViewController.m */; };
+		C1D4F81A238C9EC9009D9128 /* DMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D4F819238C9EC9009D9128 /* DMediator.m */; };
+		C1D4F81D238CA230009D9128 /* DRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D4F81C238CA230009D9128 /* DRegister.m */; };
+		C1D4F826238CA4FA009D9128 /* DMediator+DAim.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D4F824238CA4FA009D9128 /* DMediator+DAim.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +70,16 @@
 		C1D4F80B238C151C009D9128 /* BAimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BAimViewController.m; sourceTree = "<group>"; };
 		C1D4F80D238C1548009D9128 /* BAimTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BAimTarget.h; sourceTree = "<group>"; };
 		C1D4F80E238C1548009D9128 /* BAimTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BAimTarget.m; sourceTree = "<group>"; };
+		C1D4F811238C9DC9009D9128 /* CAimViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAimViewController.h; sourceTree = "<group>"; };
+		C1D4F812238C9DC9009D9128 /* CAimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAimViewController.m; sourceTree = "<group>"; };
+		C1D4F815238C9EAF009D9128 /* DAimViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAimViewController.h; sourceTree = "<group>"; };
+		C1D4F816238C9EAF009D9128 /* DAimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAimViewController.m; sourceTree = "<group>"; };
+		C1D4F818238C9EC9009D9128 /* DMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMediator.h; sourceTree = "<group>"; };
+		C1D4F819238C9EC9009D9128 /* DMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMediator.m; sourceTree = "<group>"; };
+		C1D4F81B238CA230009D9128 /* DRegister.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRegister.h; sourceTree = "<group>"; };
+		C1D4F81C238CA230009D9128 /* DRegister.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRegister.m; sourceTree = "<group>"; };
+		C1D4F824238CA4FA009D9128 /* DMediator+DAim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DMediator+DAim.m"; sourceTree = "<group>"; };
+		C1D4F825238CA4FA009D9128 /* DMediator+DAim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DMediator+DAim.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +120,8 @@
 				C14D2E95238C07F5008C8F80 /* StoryBoard */,
 				C13B76A4238C045800DDFC01 /* YeWuA */,
 				C13B76A5238C046200DDFC01 /* YeWuB */,
+				C1D4F810238C9DAC009D9128 /* YeWuC */,
+				C1D4F814238C9E86009D9128 /* YeWuD */,
 				C13B76A0238C037900DDFC01 /* Base */,
 				C13B7690238B51C300DDFC01 /* Adapter */,
 				C14D2E94238C07D2008C8F80 /* Delegate */,
@@ -200,6 +217,30 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		C1D4F810238C9DAC009D9128 /* YeWuC */ = {
+			isa = PBXGroup;
+			children = (
+				C1D4F811238C9DC9009D9128 /* CAimViewController.h */,
+				C1D4F812238C9DC9009D9128 /* CAimViewController.m */,
+			);
+			path = YeWuC;
+			sourceTree = "<group>";
+		};
+		C1D4F814238C9E86009D9128 /* YeWuD */ = {
+			isa = PBXGroup;
+			children = (
+				C1D4F815238C9EAF009D9128 /* DAimViewController.h */,
+				C1D4F816238C9EAF009D9128 /* DAimViewController.m */,
+				C1D4F818238C9EC9009D9128 /* DMediator.h */,
+				C1D4F819238C9EC9009D9128 /* DMediator.m */,
+				C1D4F825238CA4FA009D9128 /* DMediator+DAim.h */,
+				C1D4F824238CA4FA009D9128 /* DMediator+DAim.m */,
+				C1D4F81B238CA230009D9128 /* DRegister.h */,
+				C1D4F81C238CA230009D9128 /* DRegister.m */,
+			);
+			path = YeWuD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,14 +314,19 @@
 			files = (
 				C13B7693238B51FA00DDFC01 /* DetailViewController.m in Sources */,
 				C14D2E9E238C0DF2008C8F80 /* DCJUI.m in Sources */,
+				C1D4F81D238CA230009D9128 /* DRegister.m in Sources */,
 				C13B76A3238C039A00DDFC01 /* BaseViewController.m in Sources */,
 				C13B769F238C028C00DDFC01 /* Mediator+List.m in Sources */,
 				C13B767F238B519E00DDFC01 /* ViewController.m in Sources */,
+				C1D4F81A238C9EC9009D9128 /* DMediator.m in Sources */,
 				C1D4F80C238C151C009D9128 /* BAimViewController.m in Sources */,
+				C1D4F817238C9EAF009D9128 /* DAimViewController.m in Sources */,
 				C13B76A8238C049300DDFC01 /* DetailOldViewController.m in Sources */,
 				C14D2E98238C0814008C8F80 /* AppConfig.m in Sources */,
+				C1D4F813238C9DC9009D9128 /* CAimViewController.m in Sources */,
 				C13B7696238B520300DDFC01 /* ListViewController.m in Sources */,
 				C13B7699238B524300DDFC01 /* Mediator.m in Sources */,
+				C1D4F826238CA4FA009D9128 /* DMediator+DAim.m in Sources */,
 				C13B7679238B519E00DDFC01 /* AppDelegate.m in Sources */,
 				C1D4F80F238C1548009D9128 /* BAimTarget.m in Sources */,
 				C13B768A238B51A000DDFC01 /* main.m in Sources */,

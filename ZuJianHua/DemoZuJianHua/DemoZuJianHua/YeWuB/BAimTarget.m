@@ -16,7 +16,7 @@
 - (void)gotoBAimController:(NSDictionary *)parameters {
     BAimViewController *vc = BAimViewController.new;
     vc.name = parameters[@"name"];
-    vc.callBack = parameters[@"name"];
+    vc.callBack = parameters[@"callBack"];
     [[DCJUI getTopNavigationController] pushViewController:vc animated:true];
     
 

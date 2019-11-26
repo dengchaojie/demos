@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Mediator+Detail.h"
 #import "Mediator+List.h"
+#import "DMediator+DAim.h"
 
 @interface ViewController ()
 
@@ -30,11 +31,14 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-//    [Mediator gotoDetailViewControllerWithName:@"detail"];
-    [Mediator gotoBAimControllerWithName:@"BAim" callBack:^{
-        NSLog(@"gotoBAimControllerWithName");
+//    [Mediator gotoDetailViewControllerWithName:@"业务A"];
+//    [Mediator gotoBAimControllerWithName:@"业务B" callBack:^{
+//        NSLog(@"gotoBAimControllerWithName");
+//    }];
+    [DMediator gotoDAimController:@"业务D" callBack:^{
+        NSLog(@"gotoDAimController");
+
     }];
-    
 }
 
 @end

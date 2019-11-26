@@ -1,24 +1,23 @@
 //
-//  BAimViewController.m
+//  DAimViewController.m
 //  DemoZuJianHua
 //
-//  Created by chao jie deng on 2019/11/25.
+//  Created by chao jie deng on 2019/11/26.
 //  Copyright © 2019 chao jie deng. All rights reserved.
 //
 
-#import "BAimViewController.h"
+#import "DAimViewController.h"
 
-@interface BAimViewController ()
+@interface DAimViewController ()
 
 @end
 
-@implementation BAimViewController
+@implementation DAimViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = UIColor.purpleColor;
-    
+    self.view.backgroundColor = UIColor.grayColor;
     if (_callBack) {
         _callBack();
     }
