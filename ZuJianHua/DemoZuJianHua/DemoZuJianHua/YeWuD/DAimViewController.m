@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.grayColor;
+    self.title = self.name;
+
     if (_callBack) {
         _callBack();
     }

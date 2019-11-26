@@ -16,10 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Mediator (List)
 
 
-
+/// 内部路由
 + (void)gotoListViewControllerWithName:(NSString *)name;
 
-
+/// 外部路由
 + (void)gotoBAimControllerWithName:(NSString *)name
                           callBack:(void (^)(void))callBack;
 

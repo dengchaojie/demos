@@ -1,5 +1,5 @@
 //
-//  Mediator+Detail.h
+//  AMediator+Detail.h
 //  DemoZuJianHua
 //
 //  Created by chao jie deng on 2019/11/25.
@@ -9,11 +9,11 @@
 //#import <AppKit/AppKit.h>
 
 
-#import "Mediator.h"
+#import "AMediator.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Mediator (Detail)
+@interface AMediator (Detail)
 
 
 

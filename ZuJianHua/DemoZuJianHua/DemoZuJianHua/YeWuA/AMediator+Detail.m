@@ -1,16 +1,16 @@
 //
-//  Mediator+Detail.m
+//  AMediator+Detail.m
 //  DemoZuJianHua
 //
 //  Created by chao jie deng on 2019/11/25.
 //  Copyright © 2019 chao jie deng. All rights reserved.
 //
 
-#import "Mediator+Detail.h"
+#import "AMediator+Detail.h"
 #import "DetailViewController.h"
 #import "DetailOldViewController.h"
 
-@implementation Mediator (Detail)
+@implementation AMediator (Detail)
 
 
 + (void)gotoDetailViewControllerWithName:(NSString *)name {

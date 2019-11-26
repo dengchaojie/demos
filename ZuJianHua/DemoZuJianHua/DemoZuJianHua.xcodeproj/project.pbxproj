@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5133658238D11B6002AF268 /* CMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = B5133657238D11B6002AF268 /* CMediator.m */; };
+		B513365C238D11EC002AF268 /* CProtocolProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B513365B238D11EC002AF268 /* CProtocolProvider.m */; };
+		B513365F238D1972002AF268 /* AMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = B513365E238D1972002AF268 /* AMediator.m */; };
 		C13B7679238B519E00DDFC01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B7678238B519E00DDFC01 /* AppDelegate.m */; };
 		C13B767C238B519E00DDFC01 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B767B238B519E00DDFC01 /* SceneDelegate.m */; };
 		C13B767F238B519E00DDFC01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B767E238B519E00DDFC01 /* ViewController.m */; };
@@ -17,7 +20,7 @@
 		C13B7693238B51FA00DDFC01 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B7692238B51FA00DDFC01 /* DetailViewController.m */; };
 		C13B7696238B520300DDFC01 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B7695238B520300DDFC01 /* ListViewController.m */; };
 		C13B7699238B524300DDFC01 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B7698238B524300DDFC01 /* Mediator.m */; };
-		C13B769C238C024A00DDFC01 /* Mediator+Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B769B238C024A00DDFC01 /* Mediator+Detail.m */; };
+		C13B769C238C024A00DDFC01 /* AMediator+Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B769B238C024A00DDFC01 /* AMediator+Detail.m */; };
 		C13B769F238C028C00DDFC01 /* Mediator+List.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B769E238C028C00DDFC01 /* Mediator+List.m */; };
 		C13B76A3238C039A00DDFC01 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B76A2238C039A00DDFC01 /* BaseViewController.m */; };
 		C13B76A8238C049300DDFC01 /* DetailOldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B76A7238C049300DDFC01 /* DetailOldViewController.m */; };
@@ -34,6 +37,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5133656238D11B6002AF268 /* CMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMediator.h; sourceTree = "<group>"; };
+		B5133657238D11B6002AF268 /* CMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMediator.m; sourceTree = "<group>"; };
+		B5133659238D11D9002AF268 /* CProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CProtocol.h; sourceTree = "<group>"; };
+		B513365A238D11EC002AF268 /* CProtocolProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CProtocolProvider.h; sourceTree = "<group>"; };
+		B513365B238D11EC002AF268 /* CProtocolProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CProtocolProvider.m; sourceTree = "<group>"; };
+		B513365D238D1972002AF268 /* AMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMediator.h; sourceTree = "<group>"; };
+		B513365E238D1972002AF268 /* AMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMediator.m; sourceTree = "<group>"; };
 		C13B7674238B519E00DDFC01 /* DemoZuJianHua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoZuJianHua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13B7677238B519E00DDFC01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C13B7678238B519E00DDFC01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,8 +62,8 @@
 		C13B7695238B520300DDFC01 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		C13B7697238B524300DDFC01 /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
 		C13B7698238B524300DDFC01 /* Mediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
-		C13B769A238C024A00DDFC01 /* Mediator+Detail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mediator+Detail.h"; sourceTree = "<group>"; };
-		C13B769B238C024A00DDFC01 /* Mediator+Detail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Mediator+Detail.m"; sourceTree = "<group>"; };
+		C13B769A238C024A00DDFC01 /* AMediator+Detail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMediator+Detail.h"; sourceTree = "<group>"; };
+		C13B769B238C024A00DDFC01 /* AMediator+Detail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AMediator+Detail.m"; sourceTree = "<group>"; };
 		C13B769D238C028C00DDFC01 /* Mediator+List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mediator+List.h"; sourceTree = "<group>"; };
 		C13B769E238C028C00DDFC01 /* Mediator+List.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Mediator+List.m"; sourceTree = "<group>"; };
 		C13B76A1238C039A00DDFC01 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -135,8 +145,6 @@
 		C13B7690238B51C300DDFC01 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
-				C13B7697238B524300DDFC01 /* Mediator.h */,
-				C13B7698238B524300DDFC01 /* Mediator.m */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -153,8 +161,10 @@
 		C13B76A4238C045800DDFC01 /* YeWuA */ = {
 			isa = PBXGroup;
 			children = (
-				C13B769A238C024A00DDFC01 /* Mediator+Detail.h */,
-				C13B769B238C024A00DDFC01 /* Mediator+Detail.m */,
+				B513365D238D1972002AF268 /* AMediator.h */,
+				B513365E238D1972002AF268 /* AMediator.m */,
+				C13B769A238C024A00DDFC01 /* AMediator+Detail.h */,
+				C13B769B238C024A00DDFC01 /* AMediator+Detail.m */,
 				C13B7691238B51FA00DDFC01 /* DetailViewController.h */,
 				C13B7692238B51FA00DDFC01 /* DetailViewController.m */,
 				C13B76A6238C049300DDFC01 /* DetailOldViewController.h */,
@@ -168,6 +178,8 @@
 			children = (
 				C13B7694238B520300DDFC01 /* ListViewController.h */,
 				C13B7695238B520300DDFC01 /* ListViewController.m */,
+				C13B7697238B524300DDFC01 /* Mediator.h */,
+				C13B7698238B524300DDFC01 /* Mediator.m */,
 				C13B769D238C028C00DDFC01 /* Mediator+List.h */,
 				C13B769E238C028C00DDFC01 /* Mediator+List.m */,
 				C1D4F80D238C1548009D9128 /* BAimTarget.h */,
@@ -222,6 +234,11 @@
 			children = (
 				C1D4F811238C9DC9009D9128 /* CAimViewController.h */,
 				C1D4F812238C9DC9009D9128 /* CAimViewController.m */,
+				B5133656238D11B6002AF268 /* CMediator.h */,
+				B5133657238D11B6002AF268 /* CMediator.m */,
+				B5133659238D11D9002AF268 /* CProtocol.h */,
+				B513365A238D11EC002AF268 /* CProtocolProvider.h */,
+				B513365B238D11EC002AF268 /* CProtocolProvider.m */,
 			);
 			path = YeWuC;
 			sourceTree = "<group>";
@@ -314,6 +331,7 @@
 			files = (
 				C13B7693238B51FA00DDFC01 /* DetailViewController.m in Sources */,
 				C14D2E9E238C0DF2008C8F80 /* DCJUI.m in Sources */,
+				B513365F238D1972002AF268 /* AMediator.m in Sources */,
 				C1D4F81D238CA230009D9128 /* DRegister.m in Sources */,
 				C13B76A3238C039A00DDFC01 /* BaseViewController.m in Sources */,
 				C13B769F238C028C00DDFC01 /* Mediator+List.m in Sources */,
@@ -323,15 +341,17 @@
 				C1D4F817238C9EAF009D9128 /* DAimViewController.m in Sources */,
 				C13B76A8238C049300DDFC01 /* DetailOldViewController.m in Sources */,
 				C14D2E98238C0814008C8F80 /* AppConfig.m in Sources */,
+				B5133658238D11B6002AF268 /* CMediator.m in Sources */,
 				C1D4F813238C9DC9009D9128 /* CAimViewController.m in Sources */,
 				C13B7696238B520300DDFC01 /* ListViewController.m in Sources */,
 				C13B7699238B524300DDFC01 /* Mediator.m in Sources */,
 				C1D4F826238CA4FA009D9128 /* DMediator+DAim.m in Sources */,
 				C13B7679238B519E00DDFC01 /* AppDelegate.m in Sources */,
 				C1D4F80F238C1548009D9128 /* BAimTarget.m in Sources */,
+				B513365C238D11EC002AF268 /* CProtocolProvider.m in Sources */,
 				C13B768A238B51A000DDFC01 /* main.m in Sources */,
 				C13B767C238B519E00DDFC01 /* SceneDelegate.m in Sources */,
-				C13B769C238C024A00DDFC01 /* Mediator+Detail.m in Sources */,
+				C13B769C238C024A00DDFC01 /* AMediator+Detail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

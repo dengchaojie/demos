@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CAimViewController : BaseViewController
 
+
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) void (^callBack)(void);
+
+
 @end
 
 NS_ASSUME_NONNULL_END
