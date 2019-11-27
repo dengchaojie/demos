@@ -126,7 +126,54 @@ let adder: (Int, Int) -> Int = { (x, y) in
 }
 let res = adder(3, 2)//写法奇特2
 
+//带有速记参数名的闭包
+let square: (Int) -> Int = { $0 * $0 }
+let sq = square(3)
+print(sq)
 
+//将一个闭包传递给函数
+let addWithClosure = doMath(operation: adder, a: 3, b: 9)
+print(addWithClosure)
+
+//迭代枚举
+enum Food: CaseIterable {
+    case pasta, pizza, hamburger
+    
+}
+for food in Food.allCases {
+    print(food)
+}
+
+//带有 String 原始值的枚举
+enum Currency: String {
+    case euro = "EUR"
+    case dollar = "USD"
+    case pound = "GBP"
+}
+//打印原始值 rawValue
+let euroString = Currency.euro.rawValue
+print(euroString)
+//带有关联值的枚举
+enum Content {
+    case empty
+    case text(String)
+    case number(Int)
+}
+let con = Content.text("dcj")
+switch con {
+case .empty:
+    print("empty")
+case .text(let str):
+    print(str)
+case .number(let num):
+    print(num)
+}
+
+//结构体
+//结构体自动创建一个逐一构造器，该构造器接收与所有属性匹配的参数
+
+//类
+// 定义一个计算属性
 
 
 
