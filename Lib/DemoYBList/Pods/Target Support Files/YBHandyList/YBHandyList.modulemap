@@ -1,0 +1,6 @@
+framework module YBHandyList {
+  umbrella header "YBHandyList-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - YBHandyList (1.0.5)
+
+DEPENDENCIES:
+  - YBHandyList
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - YBHandyList
+
+SPEC CHECKSUMS:
+  YBHandyList: bf0bf2803bb35569863fe63fd25f4541a4e5fe68
+
+PODFILE CHECKSUM: 2a3e88e71cd031b7e31529ada1fc08103b0b9917
+
+COCOAPODS: 1.7.0
