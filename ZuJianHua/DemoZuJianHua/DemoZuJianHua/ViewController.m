@@ -30,13 +30,10 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-
-
-
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
 //    [Mediator gotoDetailViewControllerWithName:@"业务A"];
-//    [Mediator gotoBAimControllerWithName:@"业务B" callBack:^{
+//    [Meditor gotoBAimControllerWithName:@"业务B" callBack:^{
 //        NSLog(@"gotoBAimControllerWithName");
 //    }];
 //    [DMediator gotoDAimController:@"业务D" callBack:^{
