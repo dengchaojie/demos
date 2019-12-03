@@ -44,14 +44,14 @@
     NSInteger zero = 0;
     NSInteger one = 1;
     //  不推荐示例：
-    if (zero ^ one) {
+    if (zero & one) {
         NSLog(@"同真为真");
     } else {
         NSLog(@"其他为假");
 
     }
     //  推荐示例：
-    BOOL result2 = zero ^ one;//位运算符号：与
+    BOOL result2 = zero & one;//位运算符号：与
     if (result2) {
         NSLog(@"同真为真");
     } else {
