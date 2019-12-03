@@ -1,0 +1,115 @@
+//
+//  ViewController.m
+//  TestSonar
+//
+//  Created by hrt03 on 2019/11/20.
+//  Copyright © 2019 dengchaojie. All rights reserved.
+//
+// 没有viewWillAppear没有调用父类方法；上面没有空行，减号后面没有空格，左大括号没有放到行尾，2行代码放到同一行了
+//someFunc中的dict初始化有运行时崩溃；左大括号前面没有空格，str没有赋初始值，
+#import "ViewController.h"
+#import <Foundation/Foundation.h>
+
+typedef NS_ENUM(NSUInteger, AnimalType) {
+    dog,
+    cat,
+    pig,
+};
+
+@interface ViewController ()
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    [self someFunc];
+    
+    NSArray *arr = @[@"dcj",@"lpj",@"xj"];
+    for (NSString *str in arr) {
+        NSLog(@"name is %@", str);
+        //1 avoid branching statement as last in loop
+        if ([str isEqualToString:@"dcj"]) {
+            NSLog(@"my name is %@", str);
+
+        } else if ([str isEqualToString:@"lpj"]) {
+            NSLog(@"my name is %@", str);
+
+        } else if ([str isEqualToString:@"xj"]) {
+           NSLog(@"my name is %@", str);
+        }
+    }
+    
+    BOOL isValid = true;//10 constant if expression
+    if (isValid) {
+        NSLog(@"isValid is true 1");//没有写else分支
+    }else {
+        NSLog(@"isValid is true 7");
+    }
+    
+    if (!!isValid) {//13 双重否定 Double negative
+        NSLog(@"isValid is true 2");
+
+    } else {
+        NSLog(@"isValid is false    3");//不会走到这里来
+    }
+    
+    BOOL isEnable;//没有赋值初始值
+    if (isEnable == false) {
+        NSLog(@"isEnable is false   5");
+
+    } else {
+        //永远不会走到这里来
+        NSLog(@"isEnable is true    4");
+
+
+    }
+    
+    do {
+        NSLog(@"isEnable is true    6");
+
+    } while (isEnable);//11 dead code；死循环
+    
+    int a = 1;
+    NSInteger b = 2;
+    NSNumber *c = @3;//Short variable name
+    
+    AnimalType t = pig;
+    //Switch statements don't need default when fully covered
+    switch (t) {
+        case dog:
+            NSLog(@"animal is dog");
+            break;
+        case cat:
+            NSLog(@"animal is cat");
+            break;
+        case pig:
+            NSLog(@"animal is pig");
+            break;
+        default:
+            NSLog(@"it is not an animal");
+            break;
+    }
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    NSLog(@"viewWillAppear");NSLog(@"%d", animated);
+}
+
+- (void)someFunc{
+    NSString *str;
+    NSDictionary *dict = @{@"key":str};
+    NSLog(@"%@", dict);
+}
+
+- (void)viewWvviewWillAppeariewviewWillAppearWillAppearivviewWillAppeariewWillAppearllAvieviewWillAppearwWillAppeviewWillAppeararppear {
+    NSLog(@"long method");
+
+}
+
+
+
+
+@end

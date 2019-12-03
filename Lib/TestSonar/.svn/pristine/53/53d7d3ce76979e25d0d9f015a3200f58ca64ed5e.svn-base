@@ -1,0 +1,39 @@
+//
+//  ViewController.m
+//  TestSonar
+//
+//  Created by hrt03 on 2019/11/20.
+//  Copyright © 2019 dengchaojie. All rights reserved.
+//
+// 没有viewWillAppear没有调用父类方法；上面没有空行，减号后面没有空格，左大括号没有放到行尾，2行代码放到同一行了
+//someFunc中的dict初始化有运行时崩溃；左大括号前面没有空格，str没有赋初始值，
+#import "ViewController.h"
+#import <Foundation/Foundation.h>
+#import "SecondViewController.h"
+
+typedef NS_ENUM(NSUInteger, AnimalType) {
+    dog,
+    cat,
+    pig,
+};
+
+@interface ViewController ()
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    self.view.backgroundColor = UIColor.whiteColor;
+
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    SecondViewController *vc = SecondViewController.new;
+    [self presentViewController:vc animated:true completion:nil];
+}
+
+
+@end

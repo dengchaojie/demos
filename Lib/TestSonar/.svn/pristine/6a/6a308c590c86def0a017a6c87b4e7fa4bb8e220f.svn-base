@@ -1,0 +1,116 @@
+//
+//  SecondViewController.m
+//  TestSonar
+//
+//  Created by hrt03 on 2019/12/2.
+//  Copyright © 2019 dengchaojie. All rights reserved.
+//
+
+#import "SecondViewController.h"
+#import "SecondModel.h"
+
+#define isViPOS 0
+
+@interface SecondViewController ()
+
+@property (nonatomic, copy) NSString *someStr;
+@end
+
+@implementation SecondViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    self.view.backgroundColor = UIColor.purpleColor;
+//    Misplaced nil check
+    NSString *verifyStatus = [[NSUserDefaults standardUserDefaults] objectForKey:@"verifyStatus"];
+    BOOL isNil = (verifyStatus == nil);
+    BOOL isEmpty = [verifyStatus isEqualToString:@""];
+    BOOL result = (isNil || isEmpty);
+    if (result == true) {
+        NSLog(@"if verifyStatus true");
+    } else {
+        NSLog(@"if verifyStatus false");
+    }
+    
+//    Bitwise operator in conditional
+    NSInteger zero = 0;
+    NSInteger one = 1;
+    BOOL result2 = zero ^ one;//位运算符号：与
+    if (result2) {
+        NSLog(@"同真为真");
+    } else {
+        NSLog(@"其他为假");
+
+    }
+    
+    [self someMethod];
+
+}
+
+//
+- (void)someMethod {
+        
+    //    Collapsible if statements
+        NSString *str1 = @"dcj";
+        NSString *str2 = @"lpj";
+        BOOL isE = [str1 isEqualToString:str2];
+        if (isE) {
+            NSLog(@"isEqualToString true");
+        } else {
+            NSLog(@"isEqualToString false");
+
+        }
+
+    //    Constant if expression
+        BOOL result3 = (isViPOS == 1);
+        if (result3)  {
+            NSLog(@"define constaint isViPOS true");
+
+        } else {
+            NSLog(@"define constaint isViPOS false");
+
+        }
+        
+    //    Dead code
+    //    return;
+    //    NSLog(@"code will never be excuted");
+        
+    //    Broken oddness check
+        NSUInteger someInt = 3;
+        if (someInt % 2 == 1) {
+            NSLog(@"奇数");
+        } else {
+            NSLog(@"偶数");
+        }
+        
+    //    Ivar assignment outside accessors or init
+
+        self.someStr = @"someStr";
+        
+        SecondModel *model = SecondModel.new;
+        NSLog(@"SecondModel-someName-%@", model.someName);
+        
+        
+        if (self.someStr == nil) {
+            NSLog(@"正向逻辑判断 true");
+        } else {
+            NSLog(@"正向逻辑判断 false");
+        }
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self dismissViewControllerAnimated:true completion:nil];
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
