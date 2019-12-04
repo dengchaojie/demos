@@ -4,7 +4,7 @@
 
 - 项目代码扫描结果的问题页面
 
-![sonar](./TestSonar/sonar.png)
+![sonar](https://user-gold-cdn.xitu.io/2019/12/4/16ed0bce0c566b79?w=1456&h=1632&f=png&s=349116)
 
 
 ### 代码规则
