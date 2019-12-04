@@ -4,7 +4,7 @@
 
 - 项目代码扫描结果的问题页面
 
-![sonar](/TestSonar/sonar.png)
+![sonar](./TestSonar/sonar.png)
 
 
 ### 代码规则
