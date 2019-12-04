@@ -13,6 +13,7 @@
 		B5344AF12385324300F8BA62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5344AF02385324300F8BA62 /* Assets.xcassets */; };
 		B5344AF42385324300F8BA62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5344AF22385324300F8BA62 /* LaunchScreen.storyboard */; };
 		B5344AF72385324300F8BA62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5344AF62385324300F8BA62 /* main.m */; };
+		B55A4BA62397AEE400F969E4 /* BugsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55A4BA52397AEE400F969E4 /* BugsViewController.m */; };
 		B5E421FC2394FCE800A93D0D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B5E421FB2394FCE800A93D0D /* README.md */; };
 		B5E421FF2394FD2E00A93D0D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E421FE2394FD2E00A93D0D /* SecondViewController.m */; };
 		B5E422022395109100A93D0D /* SecondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E422012395109100A93D0D /* SecondModel.m */; };
@@ -30,6 +31,8 @@
 		B5344AF32385324300F8BA62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5344AF52385324300F8BA62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5344AF62385324300F8BA62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B55A4BA42397AEE400F969E4 /* BugsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BugsViewController.h; sourceTree = "<group>"; };
+		B55A4BA52397AEE400F969E4 /* BugsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BugsViewController.m; sourceTree = "<group>"; };
 		B5E421FB2394FCE800A93D0D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B5E421FD2394FD2E00A93D0D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B5E421FE2394FD2E00A93D0D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				B5E422012395109100A93D0D /* SecondModel.m */,
 				B5E4220323962EB800A93D0D /* ThirdViewController.h */,
 				B5E4220423962EB800A93D0D /* ThirdViewController.m */,
+				B55A4BA42397AEE400F969E4 /* BugsViewController.h */,
+				B55A4BA52397AEE400F969E4 /* BugsViewController.m */,
 			);
 			path = TestSonar;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5E422022395109100A93D0D /* SecondModel.m in Sources */,
+				B55A4BA62397AEE400F969E4 /* BugsViewController.m in Sources */,
 				B5E421FF2394FD2E00A93D0D /* SecondViewController.m in Sources */,
 				B5E4220523962EB800A93D0D /* ThirdViewController.m in Sources */,
 				B5344AEC2385324300F8BA62 /* ViewController.m in Sources */,
