@@ -28,15 +28,19 @@
         NSLog(@"animate end");
     };
     
-    float duration = 2.0;
-    if (duration > 0) {
-        NSLog(@"animate begin");
-        [UIView animateWithDuration:duration animations:animationBlock completion:completionBlock];
-    } else {
-        NSLog(@"no animation, directly excute");
-        animationBlock();
-        completionBlock(true);
-    }
+//    float duration = 2.0;
+//    if (duration > 0) {
+//        NSLog(@"animate begin");
+//        [UIView animateWithDuration:duration animations:animationBlock completion:completionBlock];
+//    } else {
+//        NSLog(@"no animation, directly excute");
+//        animationBlock();
+//        completionBlock(true);
+//    }
+    
+    
+    
+    
     
 }
 
