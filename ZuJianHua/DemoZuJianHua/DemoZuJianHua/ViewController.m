@@ -28,6 +28,9 @@
     AppConfig.shared.isDetailExc = @0;// 后端下发
     [[NSUserDefaults standardUserDefaults] setObject:AppConfig.shared.isDetailExc forKey:@"DetailViewControllerException"];
     [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
