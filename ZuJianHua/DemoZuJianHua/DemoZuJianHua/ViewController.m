@@ -40,7 +40,7 @@
     [obj gotoCAimControllerWithName:@"业务C" callBack:^{
         NSLog(@"goto 业务C");
     }];
-//    [Meditor gotoBAimControllerWithName:@"业务B" callBack:^{
+//    [Mediator gotoBAimControllerWithName:@"业务B" callBack:^{
 //        NSLog(@"gotoBAimControllerWithName");
 //    }];
 //    [DMediator gotoDAimController:@"业务D" callBack:^{
